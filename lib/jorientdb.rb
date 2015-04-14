@@ -1,6 +1,4 @@
-require "jorientdb/version"
-require "jorientdb/bind"
 
-module JOrientDB
-  # Your code goes here...
-end
+require 'rjb/rjb_javaproxy'
+require 'jorientdb/version'
+require 'jorientdb/bind'

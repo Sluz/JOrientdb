@@ -5,13 +5,13 @@ require 'jorientdb/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "jorientdb"
-  spec.version       = JOrientDB::VERSION
+  spec.version       = JOrientdb::VERSION
   spec.authors       = ["Cyril Bourgès"]
-  spec.email         = ["cyril@tapastreet.com"]
+  spec.email         = ["cyril@tapastreet.com", "bourges.c@gmail.com"]
 
-  spec.summary       = %q{ Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{ Write a longer description or delete this line.}
-  spec.homepage      = "https://gitlab.scss.tcd.ie"
+  spec.summary       = %q{ Wrapper Orientdb Driver }
+  spec.description   = %q{ Wrapper of JDBC Driver of Orientdb database with "bind-it" for bindings }
+  spec.homepage      = "https://github.com/Sluz/jorientdb"
   spec.license       = "MIT"
   
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

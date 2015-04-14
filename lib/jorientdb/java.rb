@@ -1,6 +1,7 @@
+
 require 'rjb'
 
-module JOrientDB 
+module JOrientdb 
   module Java
     module Lang
       Boolean            = Rjb::import('java.lang.Boolean')

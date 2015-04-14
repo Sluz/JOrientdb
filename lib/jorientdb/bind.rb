@@ -1,6 +1,7 @@
+
 require 'bind-it'
-    
-module JOrientDB 
+
+module JOrientdb 
     extend BindIt::Binding
 
     CORE = 'com.orientechnologies.orient.core'
@@ -38,10 +39,12 @@ module JOrientDB
         #--- Database record class
         ['ORecordTrackedList', "#{CORE}.db.record", 'RecordList'],
         ['ORecordTrackedSet',  "#{CORE}.db.record", 'RecordSet'],
+        ['OTrackedList',  "#{CORE}.db.record"],
 
         #--- Sql
         ['OCommandSQL',    "#{CORE}.sql"],
         ['OSQLSynchQuery', "#{CORE}.sql.query"],
+        ['OSQLQuery',      "#{CORE}.sql.query"],
 
         #--- Schema class
         ['OClass',        "#{CORE}.metadata.schema"],
@@ -63,30 +66,8 @@ module JOrientDB
         ['OrientGraph', "#{BLUEPRINTS}.impls.orient"],
         ['TransactionalGraph', "com.tinkerpop.blueprints"]
 
-       ]
+      ]
 
     # Load the default JARs and classes.
     self.bind
 end
-
-#    INDEX_TYPES   = OClass.INDEX_TYPE.constants.inject({ }) { |h, s| h[s.downcase.to_sym] = IndexType.const_get s; h }
-#    STORAGE_TYPES = []#ClusterType.constants.inject({ }) { |h, s| h[s.downcase.to_sym] = ClusterType.const_get(s).to_s; h }
-#    FIELD_TYPES   = SchemaType.constants.inject({ }) { |h, s| h[s.downcase.to_sym] = SchemaType.const_get s; h }
-#    {
-#      :bool          => "BOOLEAN",
-#      :double        => "BYTE",
-#      :datetime      => "DATE",
-#      :decimal       => "FLOAT",
-#      :embedded_list => "EMBEDDEDLIST",
-#      :list          => "EMBEDDEDLIST",
-#      :embedded_map  => "EMBEDDEDMAP",
-#      :map           => "EMBEDDEDMAP",
-#      :embedded_set  => "EMBEDDEDSET",
-#      :set           => "EMBEDDEDSET",
-#      :int           => "INTEGER",
-#      :link_list     => "LINKLIST",
-#      :link_map      => "LINKMAP",
-#      :link_set      => "LINKSET",
-#    }.map do |k,v|
-#      FIELD_TYPES[k] = SchemaType.const_get(v) unless FIELD_TYPES.key?(k)
-#    end
