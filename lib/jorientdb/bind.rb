@@ -33,8 +33,7 @@ module JOrientdb
 
         #--- Database document class
         ['ODatabaseDocumentTx',       "#{CORE}.db.document"],
-        ['ODatabaseDocumentPool',     "#{CORE}.db.document"],
-        ['ODatabaseDocumentTxPooled', "#{CORE}.db.document"],
+        ['OPartitionedDatabasePool',     "#{CORE}.db"],
 
         #--- Database record class
         ['ORecordTrackedList', "#{CORE}.db.record", 'RecordList'],
