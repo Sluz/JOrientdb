@@ -1,6 +1,8 @@
 # JOrientdb
+ Wrapper of JDBC Driver of Orientdb database with "bind-it" for bindings.
+ 
+[![Dependency Status](https://gemnasium.com/Sluz/JOrientdb.svg)](https://gemnasium.com/Sluz/JOrientdb)
 
- Wrapper of JDBC Driver of Orientdb database with "bind-it" for bindings 
 
 ## Installation
 
