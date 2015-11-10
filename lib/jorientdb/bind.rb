@@ -39,7 +39,9 @@ module JOrientdb
         ['ORecordTrackedList', "#{CORE}.db.record", 'RecordList'],
         ['ORecordTrackedSet',  "#{CORE}.db.record", 'RecordSet'],
         ['OTrackedList',  "#{CORE}.db.record"],
-
+        ['ORecordLazyList',  "#{CORE}.db.record"],
+        ['OIdentifiable',  "#{CORE}.db.record"],
+		
         #--- Sql
         ['OCommandSQL',    "#{CORE}.sql"],
         ['OSQLSynchQuery', "#{CORE}.sql.query"],
@@ -56,6 +58,7 @@ module JOrientdb
         #--- Others
         ['OUser', "#{CORE}.metadata.security"],
         ['ODocument', "#{CORE}.record.impl"],
+        ['ORecordBytes',  "#{CORE}.record.impl"],
         ['OTraverse', "#{CORE}.command.traverse"],
         ['OStorageRemote', "#{CLIENT}.remote"],
 
