@@ -40,6 +40,9 @@ module JOrientdb
         ['ORecordTrackedSet',  "#{CORE}.db.record", 'RecordSet'],
         ['OTrackedList',  "#{CORE}.db.record"],
         ['ORecordLazyList',  "#{CORE}.db.record"],
+        ['OTrackedMap',  "#{CORE}.db.record"],
+        ['ORecordLazyMap',  "#{CORE}.db.record"],
+
         ['OIdentifiable',  "#{CORE}.db.record"],
 		
         #--- Sql
